@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Products - Midwest Furnitorium</title>
+	<style>
+		body {
+			background: rgb(180, 193, 202);
+			color: #000;
+			font-family: Arial, Helvetica, sans-serif;
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		*,
+		*::before,
+		*::after {
+			box-sizing: inherit;
+		}
+
+		.container {
+			width: 960px;
+			max-width: 100%;
+			margin: 20px auto;
+		}
+
+		header {
+			padding: 10px 0;
+			overflow: hidden;
+		}
+		.logo {
+			float: left;
+		}
+		.logo img {
+			width: 220px;
+			height: 85px;
+		}
+		nav {
+			float: right;
+			margin-top: 18px;
+			font-size: 14px;
+		}
+		nav a {
+			text-decoration: none;
+			color: #000;
+			margin: 0 8px;
+		}
+		nav a:hover {
+			text-decoration: underline;
+		}
+		.clear {
+			clear: both;
+		}
+
+		/* product grid - updated flex layout */
+		.products {
+			margin-top: 20px;
+		}
+		.product-row {
+			display: flex;
+			gap: 20px;
+			flex-wrap: wrap;
+			margin-bottom: 18px;
+		}
+		.product {
+			flex: 1 1 300px;
+			min-width: 260px;
+			border: 1px solid #ddd;
+			padding: 8px;
+			background: #fff;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+		.product img {
+			width: 100%;
+			aspect-ratio: 1 / 1;
+			background: #eee;
+			display: block;
+			border: 1px solid #ccc;
+			object-fit: cover;
+		}
+		.product .title {
+			font-weight: bold;
+			margin-top: 8px;
+		}
+		.product .price {
+			color: #007;
+			margin-top: 4px;
+		}
+
+		footer {
+			margin-top: 30px;
+			padding: 12px 8px;
+			border-top: 1px solid #e5e5e5;
+			font-size: 13px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<div class="logo">
+				<img src="images/MidwestFurnitoriumLogo1.png" alt="Midwest Furnitorium Logo">
+			</div>
+			<nav>
+				<a href="index.html">Home</a> | <a href="products.html">Products</a> | <a href="about.html">About</a>
+			</nav>
+		</header>
+		<div class="clear"></div>
+
+		<main>
+			<h2 style="font-size:18px;">Featured Furniture</h2>
+
+			<div class="products">
+				<div class="product-row">
+					<div class="product">
+						<img src="chair1.jpg" alt="Chair 1">
+						<div class="title">Classic Oak Chair</div>
+						<div class="price">$89.99</div>
+					</div>
+					<div class="product">
+						<img src="sofa1.jpg" alt="Sofa 1">
+						<div class="title">2-Seater Sofa</div>
+						<div class="price">$349.00</div>
+					</div>
+					<div class="product">
+						<img src="table1.jpg" alt="Table 1">
+						<div class="title">Dining Table</div>
+						<div class="price">$199.50</div>
+					</div>
+				</div>
+
+				<div class="product-row">
+					<div class="product">
+						<img src="cabinet1.jpg" alt="Cabinet 1">
+						<div class="title">Wooden Cabinet</div>
+						<div class="price">$259.99</div>
+					</div>
+					<div class="product">
+						<img src="bed1.jpg" alt="Bed 1">
+						<div class="title">Queen Bed Frame</div>
+						<div class="price">$499.00</div>
+					</div>
+					<div class="product">
+						<img src="shelf1.jpg" alt="Shelf 1">
+						<div class="title">Bookshelf</div>
+						<div class="price">$79.95</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer>
+			<strong>Contact Us</strong><br>
+			Phone: (555) 123-4567 &nbsp;|&nbsp; Email: info@oldschoolexample.com<br>
+			Address: 123 Main St, Hometown, USA
+		</footer>
+	</div>
+</body>
+</html>
